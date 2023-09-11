@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ncalculator"
+version = "0.1.0"
+description = "Калькулятор, реализованный на tkinter"
+authors = ["L140-beep <maxim.klypin@polyus-nt.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.scripts]
+ncalculator = "ncalculator.main:run"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.5.1"
+docformatter = "1.5"
+pyformat = "^0.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
