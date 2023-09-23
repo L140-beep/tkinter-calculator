@@ -1,2 +1,6 @@
+from .App import App
+
+
 def run():
-    print("Run!")
+    app = App()
+    app.run()
